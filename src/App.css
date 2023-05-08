@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.head1 {
+  background-image: url("../public/images/pattern-bg-desktop.png");
+  height: 17rem;
+  display: none;
+}
+.head1 h1 {
+  font-size: 2rem;
+  color: aqua;
+}
+
+.head2 {
+  background-image: url("../public/images/pattern-bg-mobile.png");
+  height: 20rem;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.head2 h1 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+}
+.head2 form {
+  display: flex;
+  justify-content: center;
+}
+.head2 form input {
+  width: 80%;
+  height: 3.2em;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  padding-left: 0.7rem;
+  border-width: 0.2rem;
+}
+.head2 form img {
+  background-color: black;
+  padding: 0.5em;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.display {
+  background-color: white;
+  position: absolute;
+  top: 12rem;
+  width: 20rem;
+  left: 1.5rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.1rem 0.2rem 0.1rem rgba(129, 128, 128, 0.5);
+}
+.display .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.items-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.gap {
+  gap: 1.6rem;
+}
+
+.gap1 {
+  gap: 0.1rem;
+}/*# sourceMappingURL=App.css.map */
