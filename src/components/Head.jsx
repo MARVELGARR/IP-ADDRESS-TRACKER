@@ -8,7 +8,7 @@ function Head() {
     const [ipAddress, setIpAddress] = useState('');
 
     const API_KEY = `at_K9EzRCIF8pkMbUBnbzoRAk9c9JpZH`
-    const APIurl =`https://geo.ipify.org/api/v2/country?apiKey=${API_KEY}&ipAddress=${ipAddress}`
+    const APIurl =`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${ipAddress}&`
     
     useEffect(()=>{
         let storedIp = JSON.parse(localStorage.getItem("ip"));
