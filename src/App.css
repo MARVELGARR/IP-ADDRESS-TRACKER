@@ -15,11 +15,12 @@
 
 .head2 {
   background-image: url("../public/images/pattern-bg-mobile.png");
-  height: 20rem;
+  height: 18rem;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   position: relative;
+  gap: 0.2rem;
 }
 .head2 h1 {
   font-size: 2rem;
