@@ -5,10 +5,10 @@ import { MyContext } from '../stateManagement/MyContext';
 
 function Head() {
     const {ip, setIp} = useContext(MyContext);
-    const [ipAddress, setIpAddress] = useState('');
+    const [ipAddress, setIpAddress] = useState('157.240.22.35');
 
     const API_KEY = `at_K9EzRCIF8pkMbUBnbzoRAk9c9JpZH`
-    const APIurl =`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${ipAddress}&`
+    const APIurl =`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${ipAddress}`
     
     useEffect(()=>{
         let storedIp = JSON.parse(localStorage.getItem("ip"));
@@ -17,14 +17,14 @@ function Head() {
         }
     },[])
 
+
     const fetch_IP = useCallback(async () => {
         try{ 
             const req = await fetch(APIurl);
             if(req.ok){
                 const res = await req.json();
-                setIp(res)
+                setIp(res);           
                 localStorage.setItem('ip', JSON.stringify(res));
-                console.log(res);
             }
             else{
                 console.error(`Error fetching data. Status code: ${req.status}`);
@@ -35,6 +35,7 @@ function Head() {
         }
     }, [APIurl, setIp]);
 
+    
 
     const ipInput = (e) =>{
         const value = e.target.value;
@@ -44,6 +45,7 @@ function Head() {
         e.preventDefault();
         fetch_IP(ipAddress);
     }
+
 
   return (
     <div>

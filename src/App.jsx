@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Head from './components/Head'
-import Map from './components/Map'
+import Maps from './components/Map'
 import Display from './components/Display'
 import { MyContext } from './stateManagement/MyContext'
 import MyProvider from './stateManagement/MyProvider'
@@ -16,7 +16,7 @@ function App() {
 
           <Head/>
           <Display/>
-          <Map/>
+          <Maps/>
         </MyProvider>
       </div>
     </>

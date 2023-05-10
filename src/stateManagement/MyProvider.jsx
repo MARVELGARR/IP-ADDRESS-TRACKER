@@ -4,17 +4,16 @@ import { MyContext } from "./MyContext";
 
 function MyProvider({children}) {
 
-    const [ip, setIp] = useState([]);
+  const [ip, setIp] = useState({});
 
-
-    const state ={
-      ip,
-      setIp,
-    }
+  const state ={
+    ip,
+    setIp,
+  }
 
   return (
     <MyContext.Provider value={state}>
-        {children}
+      {children}
     </MyContext.Provider>
   )
 }

@@ -82,8 +82,11 @@
 }
 
 
-#map{ 
-    height: 180px; 
+.map{ 
+    height: 100vh;
+    z-index: -1;
+    background-color: red;
+    
 }
 
 

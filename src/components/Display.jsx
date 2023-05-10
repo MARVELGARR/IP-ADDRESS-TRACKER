@@ -9,7 +9,6 @@ function Display() {
     let storedIp = JSON.parse(localStorage.getItem("ip"));
     if (storedIp){
       setIp(storedIp);
-      console.log("data", storedIp);
     }
   },[])
 
@@ -22,7 +21,7 @@ function Display() {
         </div>
         <div className="flex gap1 items-center">
           <div className="">Location</div>
-        { ip && ip.location &&  <div className="bold font-size">{`${ip.location.country}, ${ip.location.region}`}</div>}
+        { ip && ip.location &&  <div className="bold font-size">{`${ip.location.city}, ${ip.location.postalCode}`}</div>}
         </div>
         <div className="flex gap1 items-center">
           <div className="">Timezone</div>
