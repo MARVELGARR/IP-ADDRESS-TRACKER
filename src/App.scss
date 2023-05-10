@@ -5,10 +5,34 @@
 .head1{
     background-image: url("../public/images/pattern-bg-desktop.png");
     height:17rem;
+    padding-top:4rem;
     display:none;
     h1{
         font-size: 2rem;
-        color:aqua;
+        color: white;
+        text-align: center;
+        margin-top: 5rem;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        margin-bottom:2rem;
+        input{
+            width:80%;
+            height: 3.2em;
+            border-top-left-radius: 0.6rem;
+            border-bottom-left-radius: 0.6rem;
+            padding-left: 0.7rem;
+            border-width: 0.2rem;
+        }
+        img{
+            background-color: black;
+            padding:0.5em;
+            border-top-right-radius: 0.6rem;
+            border-bottom-right-radius: 0.6rem;
+            width:1.3rem;
+            cursor: pointer;
+        }
     }
 }
 .head2{
@@ -85,12 +109,44 @@
 
 .map{ 
     height: 100vh;
-    z-index: -1;
-    background-color: red;
-    
+    z-index: -1;    
 }
 
 
 @media (min-width: 768px){
-
+    .head2{
+        display: none;
+    }
+    .head1{
+        display:block;
+    }
+    .display{
+        display:flex;
+        flex-direction: row;
+        width:80%;
+        top:18.5rem;
+        left:4.9rem;
+        .zom{
+            display: flex;
+            gap:4rem;
+            flex-direction: row;
+            padding:0.3rem 4rem;
+            .bold{
+                font-size: 1.4rem;
+            }
+            .name{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+@media (min-width: 1024px){
+    .head1{
+        form{
+            height:3.5rem;
+            input{
+                height: 3.2rem;
+            }
+        }
+    }
 }

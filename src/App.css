@@ -6,11 +6,35 @@
 .head1 {
   background-image: url("../public/images/pattern-bg-desktop.png");
   height: 17rem;
+  padding-top: 4rem;
   display: none;
 }
 .head1 h1 {
   font-size: 2rem;
-  color: aqua;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+}
+.head1 form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.head1 form input {
+  width: 80%;
+  height: 3.2em;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  padding-left: 0.7rem;
+  border-width: 0.2rem;
+}
+.head1 form img {
+  background-color: black;
+  padding: 0.5em;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  width: 1.3rem;
+  cursor: pointer;
 }
 
 .head2 {
@@ -90,5 +114,40 @@
 .map {
   height: 100vh;
   z-index: -1;
-  background-color: red;
+}
+
+@media (min-width: 768px) {
+  .head2 {
+    display: none;
+  }
+  .head1 {
+    display: block;
+  }
+  .display {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    top: 18.5rem;
+    left: 4.9rem;
+  }
+  .display .zom {
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    padding: 0.3rem 4rem;
+  }
+  .display .zom .bold {
+    font-size: 1.4rem;
+  }
+  .display .zom .name {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .head1 form {
+    height: 3.5rem;
+  }
+  .head1 form input {
+    height: 3.2rem;
+  }
 }/*# sourceMappingURL=App.css.map */
