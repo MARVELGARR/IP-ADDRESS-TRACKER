@@ -78,7 +78,8 @@
   position: absolute;
   top: 12rem;
   width: 20rem;
-  left: 1.5rem;
+  left: 50%;
+  transform: translate(-50%);
   padding: 1rem 0 1rem 0;
   border-radius: 1rem;
   box-shadow: 0rem 0.1rem 0.2rem 0.1rem rgba(129, 128, 128, 0.5);
@@ -116,6 +117,20 @@
   z-index: -1;
 }
 
+@media (min-width: 368px) {
+  .head1 {
+    display: block;
+  }
+  .head2 {
+    display: none;
+  }
+  .display {
+    top: 17rem;
+  }
+  .display .zom {
+    gap: 1rem;
+  }
+}
 @media (min-width: 768px) {
   .head2 {
     display: none;
@@ -127,12 +142,11 @@
     display: flex;
     flex-direction: row;
     width: 80%;
-    top: 18.5rem;
-    left: 4.9rem;
+    top: 17rem;
   }
   .display .zom {
     display: flex;
-    gap: 4rem;
+    gap: 1.5rem;
     flex-direction: row;
     padding: 0.3rem 4rem;
   }
@@ -149,5 +163,18 @@
   }
   .head1 form input {
     height: 3.2rem;
+  }
+  .display .zom {
+    gap: 4rem;
+  }
+  .display .zom .bold {
+    font-size: 1.7rem;
+  }
+  .display .zom .name {
+    font-size: 1.4rem;
+  }
+  .display .zom .line {
+    width: 0.1rem;
+    height: 5.3rem;
   }
 }/*# sourceMappingURL=App.css.map */
