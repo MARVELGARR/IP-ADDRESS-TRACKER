@@ -33,6 +33,7 @@ function Head() {
         catch(err){
             console.error(`Error fetching data: ${err}`);
         }
+        console.log(ip);
     }, [APIurl, setIp]);
 
     
@@ -52,13 +53,18 @@ function Head() {
         <div className="head1">
             <h1 className="">  IP Address Tracker </h1>
             <div className="">
-                <form>
+                <form onSubmit={searchIp}>
                     <input 
                     type="text" 
                     className=""
-
+                    onChange={ipInput}
                     />
-                    <img src={Arrow} className="arrow" alt="arrow" />
+                    <img 
+                    onClick={searchIp} 
+                    src={Arrow} 
+                    alt="arrow"
+                    className="btn"     
+                    />
                 </form>
             </div>
         </div>
