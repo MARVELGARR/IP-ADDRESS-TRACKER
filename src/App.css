@@ -27,6 +27,7 @@
   border-bottom-left-radius: 0.6rem;
   padding-left: 0.7rem;
   border-width: 0.2rem;
+  font-size: 1rem;
 }
 .head1 form img {
   background-color: black;
@@ -121,6 +122,9 @@
   .head1 {
     display: block;
   }
+  .head1 form input {
+    font-size: 1.5rem;
+  }
   .head2 {
     display: none;
   }
@@ -137,6 +141,9 @@
   }
   .head1 {
     display: block;
+  }
+  .head1 form input {
+    font-size: 1.2rem;
   }
   .display {
     display: flex;
@@ -163,6 +170,7 @@
   }
   .head1 form input {
     height: 3.2rem;
+    font-size: 3rem;
   }
   .display .zom {
     gap: 4rem;

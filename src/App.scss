@@ -24,6 +24,7 @@
             border-bottom-left-radius: 0.6rem;
             padding-left: 0.7rem;
             border-width: 0.2rem;
+            font-size: 1rem;
         }
         img{
             background-color: black;
@@ -116,6 +117,11 @@
 @media (min-width: 368px){
     .head1{
         display: block;
+        form{
+            input{
+                font-size: 1.5rem;
+            }
+        }
     }
     .head2{
         display:none;
@@ -135,6 +141,11 @@
     }
     .head1{
         display:block;
+        form{
+            input{
+                font-size: 1.2rem;
+            }
+        }
     }
     .display{
         display:flex;
@@ -161,6 +172,7 @@
             height:3.5rem;
             input{
                 height: 3.2rem;
+                font-size: 3rem;
             }
         }
     }
